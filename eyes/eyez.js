@@ -2,7 +2,6 @@ let balls = document.querySelectorAll(".ball");
 
 balls.forEach(ball => {
   document.addEventListener("mousemove", moveEyez, false);
-  document.addEventListener("touchmove", moveEyez, false);
 });
 
 function moveEyez() {
