@@ -3,7 +3,10 @@ body {
   padding: 0;
   background: #34495e;
 }
-
+.container {
+  width: 95vw;
+  height: 95vh;
+}
 .eyes {
   position: absolute;
   top: 50%;
@@ -31,4 +34,28 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 15px solid #333;
+}
+
+.mouth {
+  width: 0px;
+  height: 0px;
+  background: #000;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  /* transform: translate(-150%, 150%); */
+  border-radius: 50%;
+  border: 0px solid rgb(105, 10, 10);
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 1s ease-in-out;
+}
+
+.mouthAppears {
+  width: 400px;
+  height: 60px;
+  /* transform: translate(-100%, -100%); */
+  border: 10px solid rgb(105, 10, 10);
+  transform-origin: 100% 100% 0;
+  transform: translateX(-25%) translateY(-25%);
+  transform: scale(2, 2);
 }
