@@ -30,3 +30,8 @@ h1 {
   top: 50vh;
   left: 50vw;
 }
+#sillyButton {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}

@@ -1,4 +1,4 @@
-let silly = document.querySelector("silly");
+let silly = document.getElementById("sillyButton");
 let container = document.querySelector(".container");
 let para = document.querySelector(".para");
 
