@@ -1,6 +1,13 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+  min-height: 90vh;
+  background: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: background 0.5s;
 }
 h1 {
   font-family: "Ubuntu", sans-serif;
@@ -12,17 +19,99 @@ h1 {
   text-align: center;
 }
 .container {
-  height: 100vh;
+  min-height: 200vh;
   width: 100vw;
-
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
 }
-.main {
-  min-width: 20rem;
+
+#header {
+  margin: 0 auto;
+  font-family: "Aldrich", sans-serif;
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 30vh;
+  transition: all 0.5s;
+  background: inherit;
+  opacity: 0;
+  transition: opacity 1s;
 }
-.news {
+
+.linkButton {
+  padding: 8px 15px;
+  border-radius: 12px;
+  margin: 0 10px;
+  font-size: 2rem;
+  transition: 0.4s;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 125vh;
+  margin: 125vh auto 40vh auto;
+  width: 50vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#anger {
+  background: #2980b9;
+  border: 2px solid black;
+  color: white;
+}
+#anger:hover {
+  background: #6dd5fa;
+  color: black;
+}
+#heist {
+  background: #b92930;
+  border: 2px solid black;
+  color: white;
+}
+#heist:hover {
+  background: #fa90a2;
+  color: black;
+}
+#eyes {
+  background: #0e9948;
+  border: 2px solid black;
+  color: white;
+}
+#eyes:hover {
+  background: #99fa90;
+  color: black;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+  padding: 10px;
+}
+.headline {
+  font-size: 1.2rem;
+}
+.headline a {
+  text-decoration: underline;
+}
+.headline :hover {
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px dotted black;
   padding: 15px;
+}
+.links:last-child {
+  border-bottom: 1px dotted black;
 }
 
 .silly {
