@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Minimalist Heist</title>
+      <link rel="icon" type="/image/png" href="../images/favicon.png" />
+    </head>
+    <meta name="description" content="Minimalist Heist" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../assets/css/fontawesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../assets/css/brands.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/solid.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="keyframes.css" type="text/css" />
+    <link rel="stylesheet" href="heist.css" type="text/css" />
+  </head>
+  <body oncontextmenu="return false;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please use a newer
+        browser to play this game.
+      </p>
+    <![endif]-->
+
+    <div class="modal"></div>
+    <div id="message-container">
+      <div id="X"><i class="fas fa-times"></i></div>
+      <div class="message">
+        <h1>Heist</h1>
+        <h3>The Scoop</h3>
+        <p>
+          In this game, your mouse cursor is a thief. Move your mouse around the hazards and click on the green treasure in each level to progress. If you run into a hazard you will fail and you will never be able to pay back your student loans. </p>
+          <p class ="redtext">
+          NOTE: This game is unfinished. Additionally, LiamNott.Com does not condone the act of theft of any kind.
+        </p>
+      </div>
+  
+       <div class="formContainer">
+          <form id="themeForm">
+              <div id="formFlex">
+        <!--  
+          <div>
+                  <input type="checkbox" id="theme1" value="modern" class="themes" />
+              </div>
+             <div>
+                  <label for="theme1">Modern</label>
+              </div>
+              
+            <div>
+                <input type="checkbox" id="theme2" value="fantasy" class="themes" />
+            </div>
+           <div>
+                <label for="theme2">Fantasy</label></td>
+              </div>
+              <div>
+                  <input type="checkbox" id="theme3" value="apocalypse" class="themes" />
+              </div>
+               <div>
+                  <label for="theme3">Apocalypse</label>
+                </div>
+             <div class="themeInt">
+                <input type="radio" name="themeInt" value="5" > 5<br>
+<input type="radio" name="themeInt" value="10" > 10<br>
+<input type="radio" name="themeInt" value="20" > 20
+</div>  
+-->
+      <div class="submitButton"> <button
+          type="submit"
+          value="submit"
+          class="formButton"
+          id="submit"
+        >
+          Start Game
+        </button> </div>
+      </div>
+          </form>
+      </div>
+    </div>  
+
+      <div class="wow" id="wow"></div>
+    </div>
+    <div class="container" id="con">
+      <div class="scoreboard">
+        <div>Score: <span class="display" id="score">0</span></div>
+        <div>Streak: <span class="display" id="streak">0</span></div>
+        <div>Longest: <span class="display" id="longest">0</span></div>
+      </div>
+    </div>
+
+    <!-- disable.js is for disabling right-clicking, etc. Un-comment for production-->
+  
+    <script src="./disable.js" async defer></script>
+
+    <script src="./heist.js" async defer></script>
+  </body>
+</html>

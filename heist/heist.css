@@ -1,0 +1,179 @@
+/* global */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+.para {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.container {
+  height: 95vh;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* BUTTONS */
+button {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  z-index: 1;
+}
+#bigGreen {
+  border: 3px solid lightgreen;
+}
+.green {
+  color: lightgreen;
+  border: 1px solid lightgreen;
+  background: black;
+  z-index: 3;
+}
+/* SCOREBOARD DISPLAY */
+.scoreboard {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  text-transform: uppercase;
+  display: grid;
+  align-items: left;
+  margin-left: 0;
+  padding: 0px;
+  min-width: 100px;
+  text-align: right;
+  z-index: 2;
+  position: fixed;
+  z-index: 1;
+  text-shadow: 1px 1px 2px white;
+  font-weight: 700;
+}
+.display {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+/* ANIMATIONS */
+.rotate {
+  z-index: 3;
+  animation: clockwiseSpin 5s ease-in-out infinite;
+}
+
+.blue {
+  animation: clockwiseSpin 5s linear infinite;
+  color: blue;
+}
+.blue2 {
+  animation: clockwiseSpin 5s linear reverse infinite;
+  color: blue;
+}
+.rotateReverse {
+  animation: clockwiseSpin 5s linear reverse infinite;
+}
+.colorSplash {
+  animation: colorSplash 750ms 1 ease-in-out;
+}
+#wow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+#wow.transition {
+  opacity: 1;
+  left: 150vw;
+}
+#message-container {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  z-index: 5;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: inherit;
+  border: 20px solid black;
+  opacity: 1;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+#X {
+  visibility: hidden;
+  text-align: right;
+  font-size: 2rem;
+}
+table {
+  padding: 5px;
+  border-spacing: 15px;
+}
+.formContainer {
+  min-height: 100px;
+}
+
+.formButton {
+  position: static;
+  box-shadow: inset 0px 1px 0px 0px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 6px;
+  border: 1px solid #4e6096;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+.formButton:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.formButton:active {
+  top: 1px;
+}
+.submitButton {
+  padding-left: 20px;
+}
+#formFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.themeInt {
+  display: none;
+}
+.orange1 {
+  color: rgb(190, 114, 21);
+  transition: all 1s linear;
+}
+.orangeBorder {
+  font-weight: 700;
+}
+.redtext {
+  color: red;
+}

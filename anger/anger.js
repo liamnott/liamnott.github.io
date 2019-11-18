@@ -44,11 +44,3 @@ for (let i = 0; i < silly.length; i++) {
     }
   });
 }
-
-//sillies.forEach(silly => {
-//  addEventListener("mouseout", function() {
-//    silly.style.color = "blue";
-//    (silly.style.left = Math.random() * 95 + "vw"),
-//     (silly.style.top = Math.random() * 100 + "vh");
-//  });
-//});

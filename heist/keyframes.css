@@ -1,0 +1,269 @@
+/* variables to pull in from JavaScript */
+:root {
+  --mouse-x1: 0vw;
+  --mouse-y1: 0vh;
+  --button-x1: 0vh;
+  --range-x1: 40vw;
+  --button-x2: 10vh;
+  --range-x2: 50vh;
+  --button-x3: 50vw;
+  --range-x3: 30vw;
+  --button-x4: 70vw;
+  --range-x4: 20vw;
+  --button-x4: 20vw;
+  --range-x4: 30vw;
+  --button-x5: 60vw;
+  --range-x5: 30vw;
+  --button-x6: 10vw;
+  --range-x6: 40vw;
+  --button-y1: 0vh;
+  --range-y1: 20vh;
+  --button-y2: 40vh;
+  --range-y2: 20vh;
+}
+
+/* keyframes */
+
+@keyframes clockwiseSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveRed1 {
+  0% {
+    left: var(--button-x1);
+  }
+  50% {
+    left: var(--range-x1);
+  }
+  100% {
+    left: var(--button-x1);
+  }
+}
+@keyframes moveRed2 {
+  0% {
+    left: var(--button-x2);
+  }
+  50% {
+    left: var(--range-x2);
+  }
+  100% {
+    left: var(--button-x2);
+  }
+}
+@keyframes moveRed3 {
+  0% {
+    left: var(--button-x3);
+  }
+  50% {
+    left: var(--range-x3);
+  }
+  100% {
+    left: var(--button-x3);
+  }
+}
+@keyframes moveRed4 {
+  0% {
+    left: var(--button-x4);
+  }
+  50% {
+    left: var(--range-x4);
+  }
+  100% {
+    left: var(--button-x4);
+  }
+}
+@keyframes moveRed5 {
+  0% {
+    left: var(--button-x5);
+  }
+  50% {
+    left: var(--range-x5);
+  }
+  100% {
+    left: var(--button-x5);
+  }
+}
+@keyframes moveRed6 {
+  0% {
+    left: var(--button-x6);
+  }
+  50% {
+    left: var(--range-x6);
+  }
+  100% {
+    left: var(--button-x6);
+  }
+}
+@keyframes moveRed7 {
+  0% {
+    left: var(--button-x7);
+  }
+  50% {
+    left: var(--range-x7);
+  }
+  100% {
+    left: var(--button-x7);
+  }
+}
+@keyframes moveRed8 {
+  0% {
+    left: var(--button-x8);
+  }
+  50% {
+    left: var(--range-x8);
+  }
+  100% {
+    left: var(--button-x8);
+  }
+}
+@keyframes moveRed9 {
+  0% {
+    top: var(--button-y1);
+  }
+  50% {
+    top: var(--range-y1);
+  }
+  100% {
+    top: var(--button-y1);
+  }
+}
+@keyframes moveRed10 {
+  0% {
+    top: var(--button-y2);
+  }
+  50% {
+    top: var(--range-y2);
+  }
+  100% {
+    top: var(--button-y2);
+  }
+}
+@keyframes moveRed11 {
+  0% {
+    top: var(--button-y3);
+  }
+  50% {
+    top: var(--range-y3);
+  }
+  100% {
+    top: var(--button-y3);
+  }
+}
+@keyframes moveRed12 {
+  0% {
+    top: var(--button-y4);
+  }
+  50% {
+    top: var(--range-y4);
+  }
+  100% {
+    top: var(--button-y4);
+  }
+}
+@keyframes vanish {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  40% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes redfull1 {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 95vw;
+  }
+}
+@keyframes redfull2 {
+  0% {
+    left: 95vw;
+  }
+
+  100% {
+    left: 0vw;
+  }
+}
+
+.red1 {
+  animation: moveRed1 4s ease-in-out infinite;
+  color: red;
+}
+.red2 {
+  animation: moveRed2 4s ease-in-out infinite;
+  color: red;
+}
+.red3 {
+  animation: moveRed3 4s ease-in-out infinite;
+  color: red;
+}
+.red4 {
+  animation: moveRed4 4s ease-in-out infinite;
+  color: red;
+}
+.red5 {
+  animation: moveRed5 4s ease-in-out infinite;
+  color: red;
+}
+.red6 {
+  animation: moveRed6 4s ease-in-out infinite;
+  color: red;
+}
+.red7 {
+  animation: moveRed7 4s ease-in-out infinite;
+  color: red;
+}
+.red8 {
+  animation: moveRed8 4s ease-in-out infinite;
+  color: red;
+}
+.red9 {
+  animation: moveRed9 4s ease-in-out infinite;
+  color: red;
+}
+.red10 {
+  animation: moveRed10 4s ease-in-out infinite;
+  color: red;
+}
+.red11 {
+  animation: moveRed11 4s ease-in-out infinite;
+  color: red;
+}
+.red12 {
+  animation: moveRed12 4s ease-in-out infinite;
+  color: red;
+}
+.vanish {
+  animation: vanish 6s linear infinite;
+  visibility: visible;
+  color: blue;
+}
+.redfull1 {
+  animation: redfull1 4s linear infinite alternate;
+  color: red;
+}
+.redfull2 {
+  animation: redfull2 4s linear infinite alternate;
+  color: red;
+}
