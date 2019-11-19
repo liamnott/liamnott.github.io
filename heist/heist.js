@@ -523,6 +523,8 @@ document.addEventListener("mouseleave", function(event) {
     event.clientX >= window.innerWidth ||
     event.clientY >= window.innerHeight
   ) {
+    streak = 0;
+    streakDisplay.innerHTML = `${streak}`;
     initializeButtons();
     resetButtons();
   }
@@ -569,6 +571,8 @@ window.onblur = initialize;
 window.onfocus = initialize;
 
 function initialize() {
+  streak = 0;
+  streakDisplay.innerHTML = `${streak}`;
   initializeButtons();
   resetButtons();
 }

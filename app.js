@@ -81,6 +81,7 @@ function pickFont(fonts) {
   }
 
   header.style.opacity = "1";
+  header.style.display = "block";
 }
 
 window.addEventListener("wheel", function(e) {

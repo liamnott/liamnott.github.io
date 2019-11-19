@@ -36,6 +36,7 @@ h1 {
   transition: all 0.5s;
   background: inherit;
   opacity: 0;
+  display: hidden;
   transition: opacity 1s;
 }
 
